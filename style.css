@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stor {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-bar {
+  width: 100%;
+  padding: 1rem 8% 10px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.nav-bar h1 {
+  font-size: 2rem;
+}
+
+.nav-bar h1 span {
+  color: rgb(255, 145, 0);
+}
+
+.nav-bar a {
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: 0.3s ease;
+}
+
+.nav-bar a i {
+  color: white;
+  margin-right: 10px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px; /* prevents overlap with fixed navbar */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  background-color: white;
+  text-align: center;
+  padding-bottom: 0;
+  gap: 20px;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+}
+
+
+
+.img:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(255, 145, 0);
+  padding: 10px 0;
+  transition: 0.4s;
+  margin: 0 20px 20px;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  transform: scale(0.9);
+  color: black;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+      padding: 1rem 5%;
+      gap: 10px;
+    }
+  
+    .nav-bar h1 {
+      font-size: 1.2rem;
+    }
+  
+    .nav-bar a {
+      font-size: 0.8rem;
+      padding: 6px 16px;
+    }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
